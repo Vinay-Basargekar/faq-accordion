@@ -1,0 +1,68 @@
+@font-face {
+    font-family: myfont;
+    src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: myheadingfont;
+    src: url(./assets/fonts/static/WorkSans-Bold.ttf);
+}
+
+body{
+    background: hsl(275, 100%, 97%);
+    margin: 0;
+}
+
+.back{
+    width: 100%;
+    height: auto;
+    /* position: absolute; */
+    z-index: 1;
+}
+
+.QuesAnswer{
+    background: hsl(0, 0%, 100%);
+    /* width: 500px; */
+    height: auto;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 2;
+    top: 50%; /* Move the top of the .QuesAnswer to the center of the screen */
+    left: 50%; /* Move the left of the .QuesAnswer to the center of the screen */
+    transform: translate(-50%, -50%); /* Center the .QuesAnswer */
+    padding: 3rem;
+    font-family: myfont;
+    color: hsl(292, 42%, 14%);
+}
+
+.answer{
+    font-family: myfont;
+    color: hsl(292, 16%, 49%);
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+    gap: 10px;
+    .container_text{
+        font-size: 4rem;
+        font-family: myheadingfont;
+    }
+
+}
+
+.icon-star {
+    width: 30px; 
+    height: auto;
+}
+
+.plus{
+    margin-left: 20px;
+}
+
+.question{
+    display: flex;
+}
